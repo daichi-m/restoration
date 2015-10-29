@@ -44,6 +44,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'Valloric/YouCompleteMe'
 
 " ---- Extras/Advanced plugins ----------------------------------------
 " Highlight and strip trailing whitespace
@@ -113,7 +114,7 @@ let g:airline#extensions#tabline#enabled = 1
 " Open/close NERDTree Tabs with \t
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 " To have NERDTree always open on startup
-let g:nerdtree_tabs_open_on_console_startup = 0
+let g:nerdtree_tabs_open_on_console_startup = 1 
 
 
 " ----- scrooloose/syntastic settings -----
@@ -159,4 +160,6 @@ augroup mydelimitMate
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
 
+" ---- YouCompleteMe extra-conf for C-family of languages
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
