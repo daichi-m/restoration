@@ -1,5 +1,5 @@
 " File: .vimrc
-" Author: Jake Zimmerman <jake@zimmerman.io>
+" Author: Sohom Majumdar
 "
 " How I configure Vim :P
 "
